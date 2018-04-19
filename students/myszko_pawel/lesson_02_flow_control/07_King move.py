@@ -4,12 +4,11 @@
 # first cell, and then the last two - for the second cell.
 # The program should output YES if a king can go from the first cell to the second in one move, or NO otherwise.
 
-# Read an integer:
 x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-# Print a value:
+
 possible_move_list = [(x1, y1+1), (x1+1, y1+1), (x1+1, y1), (x1+1, y1-1), (x1, y1-1), (x1-1, y1-1), (x1-1, y1), (x1-1, y1+1)]
 if (x2, y2) in possible_move_list:
     print("YES")

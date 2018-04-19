@@ -4,13 +4,12 @@
 # the column and row numbers of the ending square.
 # The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise.
 
-# Read an integer:
 x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-# Print a value:
-if( (abs(x2 - x1) == abs(y2 - y1)) ):
+
+if abs(x2 - x1) == abs(y2 - y1):
     print("YES")
 else:
     print("NO")
